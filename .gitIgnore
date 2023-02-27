@@ -9,6 +9,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.dll
+*.cache
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -348,3 +350,12 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/git test/.vs/git test/v17/.suo
+/git test/git test/bin/Debug/net6.0/git test.pdb
+/git test/git test/obj/Debug/net6.0/git test.assets.cache
+/git test/git test/obj/Debug/net6.0/git test.genruntimeconfig.cache
+/git test/git test/obj/Debug/net6.0/git test.pdb
+/git test/git test/obj/git test.csproj.nuget.dgspec.json
+/git test/git test/obj/git test.csproj.nuget.g.props
+/git test/git test/obj/project.assets.json
+/git test/git test/obj/project.nuget.cache
