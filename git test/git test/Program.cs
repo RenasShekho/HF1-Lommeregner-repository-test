@@ -2,7 +2,7 @@
 double Result = 0;
 double First = 0;
 double Second = 0;
-
+String mathoperator = "";
 void Start()
 {
     Console.WriteLine("Welcome to The Calculator");
@@ -20,18 +20,22 @@ void Operator()
     {
         case 1:
             Result = First + Second;
+            mathoperator = "+" ;
             break;
         
         case 2:
             Result = First - Second;
+            mathoperator = "-";
             break;
 
         case 3:
             Result = First * Second;
+            mathoperator = "*";
             break;
 
         case 4:
             Result = First / Second;
+            mathoperator = "/";
             break;
 
         default:
@@ -41,11 +45,13 @@ void Operator()
     }
 }
 
+
 //Start 
 
 Start();
 Operator();
+Console.WriteLine(First + " " + mathoperator + " "+ Second + " = "+ Result);
 
-Console.WriteLine(Result);
+//Console.WriteLine(Result);
 
 
