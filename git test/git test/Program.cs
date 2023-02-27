@@ -52,6 +52,6 @@ Start();
 Operator();
 Console.WriteLine(First + " " + mathoperator + " "+ Second + " = "+ Result);
 
-//Console.WriteLine(Result);
+////Console.WriteLine(Result);
 
 
