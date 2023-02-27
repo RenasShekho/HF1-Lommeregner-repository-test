@@ -3,15 +3,18 @@ double Result = 0;
 double First = 0;
 double Second = 0;
 String mathoperator = "";
+
 void Start()
 {
     Console.WriteLine("Welcome to The Calculator");
     Console.WriteLine("Choose your operator:");
     Console.WriteLine("1 - Plus | 2 - Minus | 3 - Multiply | 4 - Divide");
+    Console.WriteLine();
     Number = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Whats the first number?");
+    Console.WriteLine();
+    Console.Write("Your first number?  ");
     First = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Whats the second number?");
+    Console.Write("Your second number? ");
     Second = Convert.ToInt32(Console.ReadLine());
 }
 void Operator()
@@ -50,8 +53,9 @@ void Operator()
 
 Start();
 Operator();
+Console.WriteLine();
 Console.WriteLine(First + " " + mathoperator + " "+ Second + " = "+ Result);
 
-////Console.WriteLine(Result);
+//Console.WriteLine(Result);
 
 
