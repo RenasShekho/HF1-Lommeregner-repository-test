@@ -1,1 +1,4 @@
 *.dll
+/git test.assets.cache
+/git test.genruntimeconfig.cache
+/git test.pdb
