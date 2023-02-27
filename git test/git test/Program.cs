@@ -19,19 +19,19 @@ void Operator()
     switch (Number)
     {
         case 1:
-            First += Second = Result;
+            Result = First + Second;
             break;
         
         case 2:
-            First -= Second = Result;
+            Result = First - Second;
             break;
 
         case 3:
-            First *= Second = Result;
+            Result = First * Second;
             break;
 
         case 4:
-            First /= Second = Result;
+            Result = First / Second;
             break;
 
         default:
@@ -46,6 +46,6 @@ void Operator()
 Start();
 Operator();
 
-Console.WriteLine(Number);
+Console.WriteLine(Result);
 
 
