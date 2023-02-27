@@ -16,34 +16,36 @@ void Start()
 }
 void Operator()
 {
-    if (Number == 1)
+    switch (Number)
     {
-    
+        case 1:
+            First += Second = Result;
+            break;
+        
+        case 2:
+            First -= Second = Result;
+            break;
+
+        case 3:
+            First *= Second = Result;
+            break;
+
+        case 4:
+            First /= Second = Result;
+            break;
+
+        default:
+            Console.WriteLine("Fejl, prøv igen.");
+            Operator();
+            break;
     }
 }
 
 //Start 
 
 Start();
+Operator();
 
 Console.WriteLine(Number);
 
-switch (Number)
-{
-    case 1:
-        
-        break;
-    case 2:
 
-        break;
-
-    case 3:
-        break;
-
-    case 4:
-        break;
-
-    default:
-        Console.WriteLine("Fejl");
-        break;
-}
