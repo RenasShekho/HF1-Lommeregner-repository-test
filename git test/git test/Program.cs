@@ -1,8 +1,8 @@
-﻿int Number = 0;
-double Result = 0;
-double First = 0;
-double Second = 0;
-String mathoperator = "";
+﻿int number = 0;
+double result = 0;
+double first = 0;
+double second = 0;
+string mathOperator = "";
 
 void Start()
 {
@@ -10,40 +10,39 @@ void Start()
     Console.WriteLine("Choose your operator:");
     Console.WriteLine("1 - Plus | 2 - Minus | 3 - Multiply | 4 - Divide");
     Console.WriteLine();
-    Number = Convert.ToInt32(Console.ReadLine());
+    number = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine();
     Console.Write("Your first number?  ");
-    First = Convert.ToInt32(Console.ReadLine());
+    first = Convert.ToInt32(Console.ReadLine());
     Console.Write("Your second number? ");
-    Second = Convert.ToInt32(Console.ReadLine());
+    second = Convert.ToInt32(Console.ReadLine());
 }
 void Operator()
 {
-    switch (Number)
+    switch (number)
     {
         case 1:
-            Result = First + Second;
-            mathoperator = "+" ;
+            result = first + second;
+            mathOperator = "+" ;
             break;
         
         case 2:
-            Result = First - Second;
-            mathoperator = "-";
+            result = first + second;
+            mathOperator = "-";
             break;
 
         case 3:
-            Result = First * Second;
-            mathoperator = "*";
+            result = first * second;
+            mathOperator = "*";
             break;
 
         case 4:
-            Result = First / Second;
-            mathoperator = "/";
+            result = first / second;
+            mathOperator = "/";
             break;
 
         default:
             Console.WriteLine("Fejl, prøv igen.");
-            Operator();
             break;
     }
 }
@@ -54,8 +53,6 @@ void Operator()
 Start();
 Operator();
 Console.WriteLine();
-Console.WriteLine(First + " " + mathoperator + " "+ Second + " = "+ Result);
-
-//Console.WriteLine(Result);
+Console.WriteLine(first + " " + mathOperator + " "+ second + " = "+ result);
 
 
